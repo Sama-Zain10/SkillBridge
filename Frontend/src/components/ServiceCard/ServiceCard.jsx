@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import { AuthContext } from "../../context/AuthContext";
+import  {AuthContext}  from "../../context/AuthContext";
 import StarRating from "../StarRating/StarRating";
 import toast from "react-hot-toast";
 import { createRequest } from "../../services/RequestApi";
@@ -40,6 +40,7 @@ export default function ServiceCard({ service }) {
         serviceId: service.serviceId,
         clientId: user.id,
         providerId: service.provider?.id,
+        agreedPrice: service.price, 
       });
       toast.success("Request sent successfully! ✅");
       setTimeout(() => navigate("/my-requests"), 1000);

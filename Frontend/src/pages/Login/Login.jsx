@@ -1,4 +1,3 @@
-
 import React, { useContext } from "react";
 import { useNavigate, Link, Navigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -6,14 +5,14 @@ import toast from "react-hot-toast";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner.jsx";
-import { AuthContext } from "../../context/AuthContext";
+import  {AuthContext}  from "../../context/AuthContext";
 import { loginUser } from "../../services/authApi";
 
 export default function Login() {
-const navigate = useNavigate();
+  const navigate = useNavigate();
   const { login, user } = useContext(AuthContext);
 
-   
+
   const form = useForm({
     defaultValues: {
       email: "",
@@ -28,29 +27,29 @@ const navigate = useNavigate();
   } = form;
 
 
-      if (user) {
-  return <Navigate to="/" replace />;
-}
+  if (user) {
+    return <Navigate to="/" replace />;
+  }
   const onSubmit = async (data) => {
   try {
     const loggedUser = await loginUser(data.email, data.password);
 
     login(loggedUser);
 
+    if (loggedUser.role === "provider" && !loggedUser.approved) {
+      toast.error("Account pending approval");
+      navigate("/account-pending");
+      return;
+    }
+
     toast.success("Login Successfully 👍");
 
     setTimeout(() => {
       if (loggedUser.role === "admin") {
         navigate("/admin/dashboard");
-      } 
-      else if (loggedUser.role === "provider") {
-        if (!loggedUser.approved) {
-          navigate("/account-pending");
-        } else {
-          navigate("/dashboard");
-        }
-      } 
-      else {
+      } else if (loggedUser.role === "provider") {
+        navigate("/dashboard");
+      } else {
         navigate("/services");
       }
     }, 300);
@@ -59,7 +58,6 @@ const navigate = useNavigate();
     toast.error(err.message);
   }
 };
-
   return (
     <div className="h-screen w-full flexfont-sans">
       <div className="flex-1 flex items-center justify-center p-20">

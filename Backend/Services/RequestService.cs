@@ -65,7 +65,9 @@ namespace SkillBridge.Services
                     Id = r.Id,
                     ServiceId = r.ServiceId,
                     ServiceTitle = r.Service.Title,
+                    ClientId = r.ClientId,
                     ClientName = r.Client.FullName,
+                    ProviderId = r.ProviderId,
                     ProviderName = r.Provider.FullName,
                     Message = r.Message,
                     Status = r.Status.ToString(),
@@ -156,19 +158,21 @@ namespace SkillBridge.Services
                 .Include(r => r.Client)
                 .Include(r => r.Provider)
                 .Where(r => r.Id == requestId)
-                .Select(r => new RequestResponseDto
-                {
-                    Id = r.Id,
-                    ServiceId = r.ServiceId,
-                    ServiceTitle = r.Service.Title,
-                    ClientName = r.Client.FullName,
-                    ProviderName = r.Provider.FullName,
-                    Message = r.Message,
-                    Status = r.Status.ToString(),
-                    AgreedPrice = r.AgreedPrice,
-                    CreatedAt = r.CreatedAt,
-                    CompletedAt = r.CompletedAt
-                }).FirstOrDefaultAsync();
+               .Select(r => new RequestResponseDto
+               {
+                   Id = r.Id,
+                   ServiceId = r.ServiceId,
+                   ServiceTitle = r.Service.Title,
+                   ClientId = r.ClientId,
+                   ClientName = r.Client.FullName,
+                   ProviderId = r.ProviderId,
+                   ProviderName = r.Provider.FullName,
+                   Message = r.Message,
+                   Status = r.Status.ToString(),
+                   AgreedPrice = r.AgreedPrice,
+                   CreatedAt = r.CreatedAt,
+                   CompletedAt = r.CompletedAt
+               }).FirstOrDefaultAsync();
         }
     }
 

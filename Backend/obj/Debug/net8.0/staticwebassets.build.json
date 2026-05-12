@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fseK0rsjZU9QDzI/PKbv4ZkpcKO0G6GJHnys0ACH9wE=",
+  "Hash": "c275gRd/Jk5oyWA9MDpmBMB4qLmSVbbzGSgwTGmwdXw=",
   "Source": "SkillBridge",
   "BasePath": "_content/SkillBridge",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SkillBridge\\wwwroot",
       "Source": "SkillBridge",
-      "ContentRoot": "C:\\Users\\sama sayed\\OneDrive\\Desktop\\skillBridge\\Backend\\wwwroot\\",
+      "ContentRoot": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\",
       "BasePath": "_content/SkillBridge",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\sama sayed\\OneDrive\\Desktop\\skillBridge\\Backend\\wwwroot\\uploads\\services\\a2b299df-1610-4d43-ae3d-db6042767ac7.jpg",
+      "Identity": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\uploads\\services\\a2b299df-1610-4d43-ae3d-db6042767ac7.jpg",
       "SourceId": "SkillBridge",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sama sayed\\OneDrive\\Desktop\\skillBridge\\Backend\\wwwroot\\",
+      "ContentRoot": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\",
       "BasePath": "_content/SkillBridge",
       "RelativePath": "uploads/services/a2b299df-1610-4d43-ae3d-db6042767ac7.jpg",
       "AssetKind": "All",
@@ -36,10 +36,29 @@
       "OriginalItemSpec": "wwwroot\\uploads\\services\\a2b299df-1610-4d43-ae3d-db6042767ac7.jpg"
     },
     {
-      "Identity": "C:\\Users\\sama sayed\\OneDrive\\Desktop\\skillBridge\\Backend\\wwwroot\\uploads\\services\\b0e61cc4-51a5-49bd-b17c-f5503d9aab65.jpg",
+      "Identity": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\uploads\\services\\a71bdc0d-5a33-4bb5-9161-6575dbe63c11.jpg",
       "SourceId": "SkillBridge",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sama sayed\\OneDrive\\Desktop\\skillBridge\\Backend\\wwwroot\\",
+      "ContentRoot": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\",
+      "BasePath": "_content/SkillBridge",
+      "RelativePath": "uploads/services/a71bdc0d-5a33-4bb5-9161-6575dbe63c11.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\services\\a71bdc0d-5a33-4bb5-9161-6575dbe63c11.jpg"
+    },
+    {
+      "Identity": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\uploads\\services\\b0e61cc4-51a5-49bd-b17c-f5503d9aab65.jpg",
+      "SourceId": "SkillBridge",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\",
       "BasePath": "_content/SkillBridge",
       "RelativePath": "uploads/services/b0e61cc4-51a5-49bd-b17c-f5503d9aab65.jpg",
       "AssetKind": "All",
@@ -55,10 +74,29 @@
       "OriginalItemSpec": "wwwroot\\uploads\\services\\b0e61cc4-51a5-49bd-b17c-f5503d9aab65.jpg"
     },
     {
-      "Identity": "C:\\Users\\sama sayed\\OneDrive\\Desktop\\skillBridge\\Backend\\wwwroot\\uploads\\services\\c52c536d-bc26-4fe4-8444-08fdc2199cab.jpg",
+      "Identity": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\uploads\\services\\b78ecc86-468e-4964-9f7e-306fef56cee9.jpg",
       "SourceId": "SkillBridge",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sama sayed\\OneDrive\\Desktop\\skillBridge\\Backend\\wwwroot\\",
+      "ContentRoot": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\",
+      "BasePath": "_content/SkillBridge",
+      "RelativePath": "uploads/services/b78ecc86-468e-4964-9f7e-306fef56cee9.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\services\\b78ecc86-468e-4964-9f7e-306fef56cee9.jpg"
+    },
+    {
+      "Identity": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\uploads\\services\\c52c536d-bc26-4fe4-8444-08fdc2199cab.jpg",
+      "SourceId": "SkillBridge",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\",
       "BasePath": "_content/SkillBridge",
       "RelativePath": "uploads/services/c52c536d-bc26-4fe4-8444-08fdc2199cab.jpg",
       "AssetKind": "All",
@@ -74,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\services\\c52c536d-bc26-4fe4-8444-08fdc2199cab.jpg"
     },
     {
-      "Identity": "C:\\Users\\sama sayed\\OneDrive\\Desktop\\skillBridge\\Backend\\wwwroot\\uploads\\services\\d4283976-e96a-49a6-8a0e-49fe0f61bf82.jpg",
+      "Identity": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\uploads\\services\\d4283976-e96a-49a6-8a0e-49fe0f61bf82.jpg",
       "SourceId": "SkillBridge",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sama sayed\\OneDrive\\Desktop\\skillBridge\\Backend\\wwwroot\\",
+      "ContentRoot": "D:\\IA.net\\skillBridge\\Backend\\wwwroot\\",
       "BasePath": "_content/SkillBridge",
       "RelativePath": "uploads/services/d4283976-e96a-49a6-8a0e-49fe0f61bf82.jpg",
       "AssetKind": "All",

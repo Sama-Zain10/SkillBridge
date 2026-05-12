@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rcXPgeManlw=",
+  "dgSpecHash": "CXG07u9kSLE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sama sayed\\OneDrive\\Desktop\\skillBridge\\Backend\\SkillBridge.csproj",
+  "projectFilePath": "D:\\IA.net\\skillBridge\\Backend\\SkillBridge.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sama sayed\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\sama sayed\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

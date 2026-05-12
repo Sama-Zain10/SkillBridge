@@ -51,7 +51,7 @@ namespace SkillBridge.Controllers
                 return Unauthorized(new ApiResponse<string>
                 {
                     Success = false,
-                    Message = "Invalid credentials or account not approved",
+                    Message = "Invalid credentials",
                     Data = null
                 });
             }
@@ -63,6 +63,7 @@ namespace SkillBridge.Controllers
                 Data = result
             });
         }
+
 
         [Authorize]
         [HttpGet("me")]

@@ -7,7 +7,8 @@ import Register from "./pages/Register/Register";
 import ServiceDetails from "./pages/ServiceDetails/ServiceDetails";
 import Services from "./pages/ServicesPage/Services";
 import Notfound from "./components/Notfound/Notfound";
-import { AuthContextProvider } from "./context/AuthContext";
+import AuthContextProvider  from "./context/AuthContextProvider";
+import  {AuthContext}  from "./context/AuthContext";
 import { Toaster } from "react-hot-toast";
 import Messages from "./pages/Messages/Messages";
 import MyRequests from "./pages/client/MyRequests"
@@ -25,6 +26,8 @@ import AccountPending from './pages/provider/AccountPending';
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Dashboard from "./pages/provider/Dashboard";
 import AllUsers from './pages/admin/AllUsers';
+import CompletedOrders from "./pages/provider/CompletedOrders";
+import ProviderPendingServices from "./pages/provider/ProviderPendingServices";
 
 
 const routes = createBrowserRouter([
@@ -56,6 +59,8 @@ const routes = createBrowserRouter([
           { path: "/orders", element: <ProviderOrders /> },
           { path: "/incoming-requests", element: <IncomingRequests /> },
           { path: "/dashboard", element: <Dashboard /> },
+          { path: "/completed-orders", element: <CompletedOrders /> },
+          { path: "/pending-services", element: <ProviderPendingServices /> }, 
 
         ],
       },

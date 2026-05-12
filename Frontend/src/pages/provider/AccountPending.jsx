@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { FiClock, FiLogOut } from "react-icons/fi";
-import { AuthContext } from "../../context/AuthContext";
+import { FaCheckCircle } from "react-icons/fa";
+import { HiOutlineClock, HiOutlineLockClosed } from "react-icons/hi2";
+import  {AuthContext}  from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 export default function AccountPending() {
@@ -8,20 +10,17 @@ export default function AccountPending() {
   const navigate = useNavigate();
 
   useEffect(() => {
-  if (!user) {
-    navigate("/");
-    return;
-  }
+    if (!user) {
+      navigate("/");
+      return;
+    }
 
-  if (user.role !== "provider") {
-    navigate("/");
-    return;
-  }
+    if (user.role !== "provider") {
+      navigate("/");
+      return;
+    }
+  }, [user, navigate]);
 
-  // ❌ احذفي redirect بتاع approved من هنا
-  // علشان الصفحة تفضل تظهر طبيعي
-
-}, [user, navigate]);
   const handleLogout = () => {
     logout();
     navigate("/login");
@@ -43,8 +42,11 @@ export default function AccountPending() {
 
         {/* Message */}
         <p className="text-gray-500 text-sm leading-relaxed mb-2">
-          Hi <span className="font-semibold text-gray-700">{user?.name}</span>,
-          your provider account has been submitted successfully.
+          Hi{" "}
+          <span className="font-semibold text-gray-700">
+            {user?.name}
+          </span>
+          , your provider account has been submitted successfully.
         </p>
 
         <p className="text-gray-400 text-sm leading-relaxed mb-8">
@@ -54,27 +56,31 @@ export default function AccountPending() {
 
         {/* Steps */}
         <div className="flex justify-center gap-6 mb-8 text-xs text-gray-400">
+
+          {/* Step 1 */}
           <div className="flex flex-col items-center gap-1">
             <div className="w-7 h-7 rounded-full bg-green-100 text-green-600 flex items-center justify-center font-bold">
-              ✓
+              <FaCheckCircle />
             </div>
             <span>Registered</span>
           </div>
 
           <div className="h-px w-8 bg-gray-200 mt-3.5" />
 
+          {/* Step 2 */}
           <div className="flex flex-col items-center gap-1">
-            <div className="w-7 h-7 rounded-full bg-amber-100 text-amber-500 flex items-center justify-center font-bold">
-              ⏳
+            <div className="w-7 h-7 rounded-full bg-amber-100 text-amber-500 flex items-center justify-center">
+              <HiOutlineClock className="text-sm" />
             </div>
             <span>Reviewing</span>
           </div>
 
           <div className="h-px w-8 bg-gray-200 mt-3.5" />
 
+          {/* Step 3 */}
           <div className="flex flex-col items-center gap-1">
-            <div className="w-7 h-7 rounded-full bg-gray-100 text-gray-400 flex items-center justify-center font-bold">
-              🔒
+            <div className="w-7 h-7 rounded-full bg-gray-100 text-gray-400 flex items-center justify-center">
+              <HiOutlineLockClosed className="text-sm" />
             </div>
             <span>Approved</span>
           </div>
